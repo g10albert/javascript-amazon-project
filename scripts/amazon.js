@@ -1,32 +1,4 @@
-const products = [
-  {
-    image: "image",
-    name: "name",
-    rating: {
-      stars: 4.5,
-      count: 87,
-    },
-    priceCents: 1090,
-  },
-  {
-    image: "image",
-    name: "name",
-    rating: {
-      stars: 4,
-      count: 127,
-    },
-    priceCents: 2095,
-  },
-  {
-    image: "image",
-    name: "name",
-    rating: {
-      stars: 4.5,
-      count: 56,
-    },
-    priceCents: 799,
-  },
-];
+
 
 let productsHTML = '';
 
