@@ -8,14 +8,10 @@ export function addToCart(productId) {
   let matchingItem;
 
   cart.forEach((cartItem) => {
-    console.log(cart)
-    console.log(cartItem.id)
     if (productId === cartItem.id) {
       matchingItem = cartItem;
     }
   });
-
-  console.log(matchingItem)
 
   if (matchingItem) {
     matchingItem.quantity++;
@@ -23,6 +19,7 @@ export function addToCart(productId) {
     cart.push({
       id: productId,
       quantity: 1,
+      deliveryOptionId: "1"
     });
   }
   saveToStorage();
